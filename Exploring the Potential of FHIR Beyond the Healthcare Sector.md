@@ -16,6 +16,8 @@ FHIR is based on a resource-oriented model that defines discrete pieces of data,
 
 ### Basic FHIR Resource Structure
 
+
+```json
 {
   "resourceType": "Patient",
   "id": "example",
@@ -27,6 +29,7 @@ FHIR is based on a resource-oriented model that defines discrete pieces of data,
   ],
   "birthDate": "1980-01-01"
 }
+```
 
 FHIR’s principles of modularity and extensibility make it uniquely adaptable to use cases beyond healthcare. These principles align with the growing need for interoperability across diverse industries.
 
@@ -96,6 +99,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
   - Procedure: Logs HR events like promotions or transfers
 - **Example:**
 
+```json
 {
   "resourceType": "Patient",
   "id": "emp123",
@@ -112,6 +116,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
     }
   ]
 }
+```
 
 ### 2. IT Asset Management
 - **Use Case:** Asset Lifecycle Tracking
@@ -120,6 +125,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
   - Observation: Logs maintenance schedules and assignments
 - **Example:**
 
+```json
 {
   "resourceType": "Device",
   "id": "device123",
@@ -131,6 +137,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
     "reference": "Organization/ITDept"
   }
 }
+```
 
 ### 3. Logistics and Supply Chain
 - **Use Case:** Unified Inventory Tracking
@@ -139,6 +146,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
   - Procedure: Logs shipping and receiving processes
 - **Example:**
 
+```json
 {
   "resourceType": "SupplyRequest",
   "id": "supply123",
@@ -150,6 +158,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
     "value": 100
   }
 }
+```
 
 ### 4. Finance
 - **Use Case:** Invoice and Payment Tracking
@@ -158,6 +167,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
   - Observation: Logs transaction statuses
 - **Example:**
 
+```json
 {
   "resourceType": "Claim",
   "id": "invoice123",
@@ -169,6 +179,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
     "reference": "Patient/customer456"
   }
 }
+```
 
 ### 5. Education
 - **Use Case:** Student and Course Management
@@ -177,6 +188,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
   - Observation: Tracks grades and attendance
 - **Example:**
 
+```json
 {
   "resourceType": "Patient",
   "id": "student123",
@@ -193,6 +205,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
     }
   ]
 }
+```
 
 ### 6. Mergers & Acquisitions
 - **Use Case:** Data Unification
@@ -201,6 +214,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
   - Patient: Represents employees
 - **Example:**
 
+```json
 {
   "resourceType": "Organization",
   "id": "org123",
@@ -211,6 +225,7 @@ FHIR's resource-based design allows it to be adapted for use cases across variou
     }
   ]
 }
+```
 
 ### 7. Gaming Industry
 
@@ -222,6 +237,7 @@ Modern gaming ecosystems involve multiple platforms, in-game economies, and play
   - Observation: Logs gameplay metrics like time spent or high scores.
 - **Example:**
 
+```json
 {
   "resourceType": "Patient",
   "id": "player123",
@@ -237,6 +253,7 @@ Modern gaming ecosystems involve multiple platforms, in-game economies, and play
     }
   ]
 }
+```
 
 ### 8. Banking and Financial Services
 
@@ -248,6 +265,7 @@ Financial systems face challenges in customer data management, transaction track
   - Observation: Logs account metrics like balances and credit scores.
 - **Example:**
 
+```json
 {
   "resourceType": "Procedure",
   "id": "txn123",
@@ -260,6 +278,7 @@ Financial systems face challenges in customer data management, transaction track
   },
   "performedDateTime": "2024-01-01T10:30:00Z"
 }
+```
 
 ### 9. Astronomy
 
@@ -271,6 +290,7 @@ Astronomy involves vast datasets from observatories and instruments, requiring e
   - DocumentReference: Links to datasets or research findings.
 - **Example:**
 
+```json
 {
   "resourceType": "Observation",
   "id": "obs456",
@@ -287,6 +307,7 @@ Astronomy involves vast datasets from observatories and instruments, requiring e
   },
   "effectiveDateTime": "2024-01-01T22:00:00Z"
 }
+```
 
 ### 10. Government
 
@@ -298,6 +319,7 @@ Government agencies often operate with siloed systems that hinder collaboration.
   - Device: Tracks equipment or supplies used in response.
 - **Example:**
 
+```json
 {
   "resourceType": "Encounter",
   "id": "incident123",
@@ -313,6 +335,7 @@ Government agencies often operate with siloed systems that hinder collaboration.
     "end": "2024-11-01T14:00:00Z"
   }
 }
+```
 
 ### 11. Music and Entertainment
 
@@ -324,6 +347,7 @@ Royalty tracking and licensing systems in the music industry are often opaque an
   - Observation: Tracks metrics like play counts or revenue.
 - **Example:**
 
+```json
 {
   "resourceType": "Procedure",
   "id": "play567",
@@ -336,6 +360,7 @@ Royalty tracking and licensing systems in the music industry are often opaque an
   },
   "performedDateTime": "2024-11-01T12:00:00Z"
 }
+```
 
 ## Advantages of FHIR Across Industries
 
